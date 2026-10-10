@@ -1,0 +1,9 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+loadamberprep cyl_fixed.prep
+loadamberparams cyl.frcmod
+fib = loadpdb capped_fib_linked.pdb
+savepdb fib fib_check.pdb
+saveamberparm fib fib.prmtop fib.inpcrd
+quit
